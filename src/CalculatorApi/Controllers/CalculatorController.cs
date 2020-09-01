@@ -18,5 +18,19 @@ namespace CalculatorApi.Controllers
             return a + b;
            
         }
+        [HttpGet]
+        [Route("multiplication/{a}/{b}")]
+        public float multi(float a, float b)
+        {
+            return a * b;
+
+        }
+        [HttpGet]
+        [Route("masse/{energie}/{poids}")]
+        public float Masse(float energie, float poids)
+        {
+            return energie + poids;
+
+        }
     }
 }
